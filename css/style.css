@@ -1,9 +1,11 @@
 /* styles.css */
 
 body {
-    text-align: center;
+	text-align: center;
 }
-
+h1, h2, h3 {
+	font-family: 'Raleway', sans-serif;
+}
 
 /* -------------------
    CAR RACER
@@ -44,8 +46,26 @@ body {
 	border-right: dashed 10px white;
 	box-sizing: border-box;
 	margin: 40px 0;
+	position: relative;
 }
-
+#start-line {
+	position: absolute;
+	left: 201px;
+	height: 100%;
+	border-right: 5px dashed #fff;
+}
+h3#start-line-text{
+	position: absolute;
+	left: 15px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	writing-mode: rl-tb;
+	margin: auto 0;
+	height: 100%;
+	color: #fff;
+	font-size: 50px;
+}
 .car {
 	display: block;
 	position: relative;
